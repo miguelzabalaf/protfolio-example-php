@@ -66,12 +66,12 @@ include('proyects.php')
             do {
 
               echo '<li class="work-position">';
-              echo '<h5> ' . $jobs[$idx]['title'] . '</h5>';
-              echo '<p>' . $jobs[$idx]['description'] . '</p>';
+              echo '<h5> ' . $jobs->title . '</h5>';
+              echo '<p>' . $jobs->description . '</p>';
               echo '<strong>Achievements:</strong>';
               echo '<ul>';
               for($i = 0; $i < count($jobs); $i++) {
-                echo '<li>' . $jobs[$idx]['achievements'] . '</li>';
+                echo '<li>' . $jobs->achievements . '</li>';
               }
               echo '</ul>';
               echo '</li>';
